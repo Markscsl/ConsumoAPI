@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Studio Ghibli</title>
+</head>
+
+<body class="min-h-screen flex flex-col bg-[#F2F1E5]">
+    <nav class="flex justify-between px-14 items-baseline py-6">
+        <h3 class="text-3xl font-semibold text-[#4F6443]">Ghibli Movies</h3>
+
+        <div class="flex text-[#384C2D] space-x-14 justify-center">
+            <button
+                class="text-xl border-b-2 border-transparent hover:font-semibold hover:border-[#384C2D] transition-colors duration-200">Filmes</button>
+        </div>
+
+        <div>
+            <input id="input-field" class="py-2 bg-[#B5CEA6]/40 px-6 font-normal placeholder-[#384C2D]/60 rounded-full" type="text"
+                placeholder="Buscar filme...">
+        </div>
+    </nav>
+
+    <header class="bg-[#E4E3D7] flex justify-between p-20 ">
+        <div class="font-semibold p-14 space-y-10">
+            <h3 class="text-[#0D2006] text-6xl italic">A Magia da</h3>
+            <span class="text-[#384C2D] text-6xl italic">Animação Japonesa.</span>
+
+            <p class="font-light text-xl">Mergulhe em mundos fantásticos e histórias inesquecíveis.
+                <span class="block">Conheça os filmes do Studio Ghibli, o aclamado estúdio fundado pelo lendário</span>
+                <span>Hayao Miyazaki, e deixe-se encantar por essas obras-primas.</span>
+            </p>
+        </div>
+
+        <div class="bg-[#B5CEA6]/30 space-y-4 p-10 rounded-[80px] w-[600px]">
+            <span class="text-[#384C2D] font-light text-2xl">Recomendação de filme :P</span>
+            <h3 class="text-[#384C2D] italic font-semibold text-2xl">A Viagem de Chihiro (Spirited Away)</h3>
+            <p class="whitespace-pre-line text-[#384C2D]">Chihiro e seus pais estão se mudando para uma cidade
+                diferente.
+                A caminho da nova casa, o pai decide pegar um atalho.
+                Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto.
+                Chihiro sente o perigo, mas seus pais começam a comer.
+                Quando anoitece, eles se transformam em porcos.
+                Agora, apenas Chihiro pode salvá-los.
+            </p>
+        </div>
+    </header>
+
+    <main class="grow">
+        <div class="space-y-2">
+            <div class="bg-[#B5CEA6]/20 rounded-full p-1 mt-6 ml-20 inline-flex">
+                <button class="tab-btn px-6 py-2 active:bg-[#B5CEA6]/80 hover:bg-[#B5CEA6] font-medium rounded-full transition-all">Todos os filmes</button>
+                    
+                    <button
+                    class="tab-btn px-6 py-2 active:bg-[#B5CEA6]/50 hover:bg-[#B5CEA6] font-medium rounded-full transition-all">Miyazaki</button>
+                    
+                    <button
+                    class="tab-btn px-6 py-2 active:bg-[#B5CEA6]/50 hover:bg-[#B5CEA6] font-medium rounded-full transition-all">Takahata</button>
+                </div>
+            </div>
+        <div class="grid gap-y-16 grid-cols-4 place-items-center mt-10" id="filmes"></div>
+    </main>
+
+    <footer class="mt-16">
+        <div class="bg-[#E4E3D7] flex justify-around items-center h-20 font-semibold">
+            <span class="text-xl">&copy;Marcus Vinicius - WebSupply</span>
+            <span class="text-xl">Dados buscados de: <a class="text-blue-500" href="https://ghibliapi.vercel.app" target="_blank">https://ghibliapi.vercel.app/</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="./script.js"></script>

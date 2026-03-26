@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>GitHub</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center pt-20 font-sans">
+    <div class="flex flex-col items-center gap-6 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-gray-800">Buscar usuários do GitHub</h2>
+        <div class="flex gap-2 w-full justify-center" id="card-usuario"></div>
+            <input type="text" class="shadow-md focus:border-indigo-500 border-2 border-transparent px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none" id="perfil-digitado" placeholder="Digite o nome do perfil...">
+        <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold px-5 py-3 rounded-xl transition-colors shadow-md" onclick="buscarPerfil()">Buscar Perfil</button>
+    </div>
+</body>
+</html>
+
+<script src="./script.js"></script>

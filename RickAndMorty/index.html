@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rick And Morty</title>
+</head>
+
+<body class="flex flex-col justify-center items-center h-screen bg-linear-to-r from-">
+    <div class="bg-amber-400 p-6 shadow-xl border-2 flex flex-col justify-center gap-4 text-center border-black rounded-b-2xl mb-12">
+            <h2 class="font-semibold">Buscar Personagem por ID</h2>
+            <input class="p-2 border-2 border-black rounded-2xl" type="number" id="buscar-id" placeholder="Digite um ID de 1 a 826">
+            
+            <div id="card-por-id"></div>
+            <button id="btn-buscar" class="p-2 rounded-3xl bg-blue-800 text-white font-semibold hover:bg-blue-500 hover:text-gray-200 shadow-md transition-all duration-300 hover:[transform:translateY(-.335rem)]" onclick="encontrarPersonagem()">Mostrar Personagem</button>
+    </div>
+
+    <div class="bg-amber-600 max-h-80">
+        <div>
+            <h2>Listar todos Personagens</h2>
+            
+            <div id="card-todos"></div>
+            <button id="btn-mostrar-todos" onclick="listarPersonagens()">Clique para exibir todos personagens</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="script.js"></script>
